@@ -3,14 +3,14 @@ name: Build all-in-one images registry
 
 on:
   push:
-    branches: [master, express]
+    branches: [main, express]
   pull_request:
-    branches: [master]
+    branches: [main]
   schedule:
     - cron: "0 16 * * *"
 
 env:
-  IMAGE_REPO: "kubespheredev"
+  IMAGE_REPO: "kubepartnerdev"
   IMAGE_NAME: "images-registry"
   IMAGE_TAG: "latest"
   SKOPEO_VERSION: v1.2.0
